@@ -106,9 +106,13 @@ modal.addEventListener("click", (event) => {
 
 // :point_right: TASK 8- [STRETCH] Create helper functions to make the code
 // more readable in tasks 3, 4, 5, 6
-function openModal() {}
+function openModal() {
+  modal.classList.remove("off");
+}
 
-function closeModal() {}
+function closeModal() {
+  modal.classList.add("off");
+}
 
 function killReports() {}
 
