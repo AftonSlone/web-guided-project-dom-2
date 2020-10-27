@@ -114,7 +114,10 @@ function closeModal() {
   modal.classList.add("off");
 }
 
-function killReports() {}
+function killReports() {
+  failureMessage.classList.add("off");
+  successMessage.classList.add("off");
+}
 
 // :point_right: TASK 9- [STRETCH] Using the mouseover event on 'document',
 // log to the console the X and Y coordinates
