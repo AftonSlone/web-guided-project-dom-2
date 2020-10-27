@@ -91,16 +91,18 @@ document.addEventListener("keydown", (e) => {
 // It should console.log the target :dart: of the event.
 // It should also console.log the CURRENT target 🧭 of the event.
 // Play with stopPropagation and stopImmediatePropagation.
-Array.from(document.all).forEach(elem => elem.addEventListener('click', event => {
-    console.log('🎯 target:        ', event.target)
-    console.log('🧭 current target:', event.currentTarget)
-    console.log('\n')
-  }))
-  
-  modal.addEventListener('click', event => {
-    console.log('stopping propagation in its tracks!')
-    event.stopPropagation()
+Array.from(document.all).forEach((elem) =>
+  elem.addEventListener("click", (event) => {
+    console.log("🎯 target:        ", event.target);
+    console.log("🧭 current target:", event.currentTarget);
+    console.log("\n");
   })
+);
+
+modal.addEventListener("click", (event) => {
+  console.log("stopping propagation in its tracks!");
+  event.stopPropagation();
+});
 
 // :point_right: TASK 8- [STRETCH] Create helper functions to make the code
 // more readable in tasks 3, 4, 5, 6
